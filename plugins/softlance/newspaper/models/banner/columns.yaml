@@ -1,0 +1,15 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    banner_size:
+        label: Размары банера
+    banner_price:
+        label: Цены
+    used_by:
+        label: Занят?
+        type: switch

@@ -1,0 +1,8 @@
+releases:
+  label:
+  view:
+    list: $/softlance/newspaper/models/order/order_columns.yaml
+    toolbarButtons: add|remove
+  manage:
+    list: $/softlance/newspaper/models/order/order_columns.yaml
+    scope: byNewspaper

@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    size:
+        label: Размер
+        span: storm
+        cssClass: col-xs-4
+    price:
+        label: Цена
+        span: storm
+        cssClass: col-xs-4
+    weight_in_symbol:
+        label: Вес в символах
+        span: storm
+        cssClass: col-xs-4

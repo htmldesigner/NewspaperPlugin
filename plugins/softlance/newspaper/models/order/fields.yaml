@@ -1,0 +1,197 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    user@create:
+        label: ФИО
+        span: storm
+        cssClass: col-xs-4
+    user@update:
+        label: ФИО
+        disabled: true
+        span: storm
+        cssClass: col-xs-4
+    email@create:
+        label: email
+        span: storm
+        cssClass: col-xs-3
+    email@update:
+        label: email
+        disabled: true
+        span: storm
+        cssClass: col-xs-3
+    phone@create:
+        label: Телефон
+        span: storm
+        cssClass: col-xs-3
+    phone@update:
+        label: Телефон
+        disabled: true
+        span: storm
+        cssClass: col-xs-3
+    iin@create:
+        label: иин
+        span: storm
+        cssClass: col-xs-2
+    iin@update:
+        label: иин
+        disabled: true
+        span: storm
+        cssClass: col-xs-2
+    newspaper@create:
+        label: Газета
+        type: relation
+        nameFrom: name
+        span: storm
+        cssClass: col-xs-2
+    newspaper@update:
+        label: Газета
+        type: relation
+        nameFrom: name
+        cssClass: col-xs-2
+        span: storm
+        disabled: true
+
+
+tabs:
+    fields:
+        orderArticleSettings:
+            tab: Статья
+            label: Заказная статья
+            type: relation
+            span: storm
+            cssClass: col-xs-12
+            select: concat(symbol_count,' - Символов ->',  ' Цена - ', price)
+            scope: byArticle
+            emptyOption: -- no status --
+        articleImageSize:
+            tab: Статья
+            label: Изображение
+            type: relation
+            span: storm
+            cssClass: col-xs-12
+            select: concat('Резмер - ', size, ' -> Цена - ', price, ' -> Вес - ', weight_in_symbol)
+            scope: byArticle
+            emptyOption: -- no status --
+        article:
+            tab: Статья
+            label: Текст статьи
+            type: textarea
+            size: huge
+            span: storm
+            cssClass: col-xs-8
+        article_image:
+            tab: Статья
+            label: Изображение
+            type: mediafinder
+            mode: image
+            span: storm
+            cssClass: col-xs-4
+#        content:
+#            tab: Статья
+#            type: partial
+#            path: article_price
+
+
+#        release_count:
+#            label: Кол-во выпусков
+#            disabled: true
+#            span: storm
+#            cssClass: col-xs-2 release_count
+#            tab: Заказ ститьи
+#            context:
+#                - update
+#        total:
+#            label: Итого (тг.)
+#            disabled: true
+#            span: storm
+#            cssClass: col-xs-2 total_price
+#            tab: Заказ ститьи
+#            context:
+#                - update
+#        article_settings:
+#            type: nestedform
+#            usePanelStyles: false
+#            tab: Заказ ститьи
+#            context:
+#                - update
+#            form:
+#                fields:
+#                    article_price_list:
+#                        label: Размер статьи / Цена
+#                        type: articleSelector
+#                        span: storm
+#                        cssClass: col-xs-4 article_price
+#                    photo_size:
+#                        label: Размер бенера / Цена
+#                        type: imageSelector
+#                        span: storm
+#                        cssClass: col-xs-4 photo_size
+#                    title:
+#                        label: Заголовок
+#                        type: text
+#                        span: storm
+#                        cssClass: col-xs-12 title_count
+#                    text:
+#                        label: Текст статьи
+#                        type: textarea
+#                        size: huge
+#                        span: storm
+#                        cssClass: col-xs-8 textArea_count
+#                    image:
+#                        label: Изображение
+#                        type: mediafinder
+#                        mode: image
+#                        span: storm
+#                        cssClass: col-xs-4
+#        releases:
+#            tab: Заказ ститьи
+#            type: partial
+#            path: releases_field
+#            context:
+#                - update
+
+        banner:
+            tab: Баннер
+            label: Расценки на баннеры
+            type: relation
+            select: concat(banner_size, ' - Стоимость ' , banner_price, ' тг ')
+            scope: byBanner
+            span: storm
+            cssClass: col-xs-3
+            emptyOption: -- no status --
+        banner[banner_price]:
+            label: Один релиз (тг)
+            tab: Баннер
+            type: text
+            disabled: true
+            span: storm
+            cssClass: col-xs-2
+        release_count:
+            label: Выпусков
+            disabled: true
+            span: storm
+            cssClass: col-xs-1
+            tab: Баннер
+        total_result:
+            label: Итого (тг)
+            type: partial
+            disabled: true
+            span: storm
+            cssClass: col-xs-1
+            tab: Баннер
+        banner_image:
+            tab: Баннер
+            type: mediafinder
+            mode: image
+            span: storm
+            cssClass: col-xs-5
+        banner_releases:
+            tab: Баннер
+            type: partial
+            path: releases_field
+            context:
+                - update
+
+

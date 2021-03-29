@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Service
+
+# Model Form Field configuration
+form: $/softlance/newspaper/models/service/fields.yaml
+
+# Model Class name
+modelClass: Softlance\Newspaper\Models\Service
+
+# Default redirect location
+defaultRedirect: softlance/newspaper/services
+
+# Create page
+create:
+    title: Create Service
+    redirect: softlance/newspaper/services/update/:id
+    redirectClose: softlance/newspaper/services
+
+# Update page
+update:
+    title: Edit Service
+    redirect: softlance/newspaper/services
+    redirectClose: softlance/newspaper/services
+
+# Preview page
+preview:
+    title: Preview Service

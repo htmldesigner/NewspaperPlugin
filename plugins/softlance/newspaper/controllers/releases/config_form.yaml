@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Release
+
+# Model Form Field configuration
+form: $/softlance/newspaper/models/release/fields.yaml
+
+# Model Class name
+modelClass: Softlance\Newspaper\Models\Release
+
+# Default redirect location
+defaultRedirect: softlance/newspaper/releases
+
+# Create page
+create:
+    title: Create Release
+    redirect: softlance/newspaper/releases/update/:id
+    redirectClose: softlance/newspaper/releases
+
+# Update page
+update:
+    title: Edit Release
+    redirect: softlance/newspaper/releases
+    redirectClose: softlance/newspaper/releases
+
+# Preview page
+preview:
+    title: Preview Release

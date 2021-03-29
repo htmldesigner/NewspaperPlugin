@@ -1,0 +1,27 @@
+<?php if ($this->previewMode): ?>
+
+    <div class="form-control">
+        <?= $value ?>
+    </div>
+
+<?php else: ?>
+
+
+    <select name="<?= $name ?>" class="form-control">
+
+        <?php
+    foreach($article_prices as $item) {
+      ?>
+        <option value="<?= $item['title'] ?>"
+                <?php
+                if ($item['title'] === $value){ echo 'selected'; }
+                ?>
+                price="<?= $item['price'] ?>"><?= $item['title'] ?></option>
+        <?php
+    }
+  ?>
+
+    </select>
+
+
+<?php endif ?>

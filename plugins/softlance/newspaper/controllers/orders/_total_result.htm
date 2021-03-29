@@ -1,0 +1,10 @@
+<div class="form-group dropdown-field">
+
+
+ <?php if ($model->banner) { ?>
+ <input type="text" class="form-control" disabled="disabled"
+        value="<?php echo $model->banner->banner_price * $model->releases->count() ?>">
+ <?php } ?>
+
+
+</div>

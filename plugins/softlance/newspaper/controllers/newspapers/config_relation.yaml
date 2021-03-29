@@ -1,0 +1,62 @@
+releases:
+  label:
+  view:
+    list: $/softlance/newspaper/models/release/columns.yaml
+    toolbarButtons: create|delete
+  manage:
+    form: $/softlance/newspaper/models/release/fields.yaml
+    recordsPerPage: 20
+
+article:
+  label: Расценки
+  view:
+    form: $/softlance/newspaper/models/article/fields.yaml
+    toolbarButtons: update|delete
+  manage:
+    form: $/softlance/newspaper/models/article/fields.yaml
+
+
+articleImageSize:
+  label: Размера картинок
+  manage:
+    form: $/softlance/newspaper/models/articleimagesize/fields.yaml
+    list: $/softlance/newspaper/models/articleimagesize/columns.yaml
+  view:
+    list: $/softlance/newspaper/models/articleimagesize/columns.yaml
+    toolbarButtons: create|delete
+
+orderArticleSettings:
+  label: Настройки заказных статей
+  manage:
+    form: $/softlance/newspaper/models/orderarticlesettings/fields.yaml
+    list: $/softlance/newspaper/models/orderarticlesettings/columns.yaml
+  view:
+    list: $/softlance/newspaper/models/orderarticlesettings/columns.yaml
+    toolbarButtons: create|delete
+
+
+
+
+congratulation:
+  label:
+  view:
+    form: $/softlance/newspaper/models/congratulation/fields.yaml
+    toolbarButtons: update|delete
+  manage:
+    form: $/softlance/newspaper/models/congratulation/fields.yaml
+
+banner:
+  label:
+  manage:
+    form: $/softlance/newspaper/models/banner/fields.yaml
+    list: $/softlance/newspaper/models/banner/columns.yaml
+  view:
+    list: $/softlance/newspaper/models/banner/columns.yaml
+    toolbarButtons: create|delete
+#  label:
+#  view:
+#    form: $/softlance/newspaper/models/banner/fields.yaml
+#    toolbarButtons: update|delete
+#  manage:
+#    form: $/softlance/newspaper/models/banner/fields.yaml
+

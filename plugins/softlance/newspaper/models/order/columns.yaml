@@ -1,0 +1,23 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    user:
+        label: ФИО
+    email:
+        label: email
+    phone:
+        label: Телефон
+    iin:
+        label: иин
+    created_at:
+        label: Дата
+        type: datetime
+    newspaper_id:
+        label: Газета
+        relation: newspaper
+        select: name

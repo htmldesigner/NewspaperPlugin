@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+
+fields:
+    banner_size:
+        label: Размары банера
+        type: text
+    banner_price:
+        label: Цены
+        type: text
+    used_by:
+        label: Занят/Свободен
+        type: switch
+        comment: Flick this switch to display content
+        on: вкл
+        off: выкл
+    banner_preview:
+        label: Изображение
+        type: mediafinder
+        mode: image

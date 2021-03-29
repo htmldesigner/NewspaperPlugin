@@ -1,0 +1,17 @@
+<?php
+$items = \Softlance\Newspaper\Models\ArticleImageSize::where('newspaper_id', $model->newspaper_id)->get();
+
+?>
+
+<select name="<?= $name ?>" class="form-control custom-select">
+
+ <?php
+    foreach($items as $item) {
+      ?>
+ <option value="<?= $item->id ?>" price="<?= $item['price'] ?>">Размер - <?= $item->size ?></option>
+ <?php
+    }
+  ?>
+
+</select>
+

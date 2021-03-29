@@ -1,0 +1,17 @@
+1.0.1: First version of newspaper
+1.0.2:
+  - Create tables.
+  - create_newspapers_table.php
+  - create_releases_table.php
+1.0.3:
+  - Create service tables.
+  - create_articles_table.php
+  - create_congratulations_table.php
+  - create_banners_table.php
+1.0.4:
+  - Create orders table.
+  - create_orders_table.php
+  - create_orders_releases_table.php
+  - create_article_image_sizes_table.php
+  - create_order_article_settings_table.php
+

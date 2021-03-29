@@ -1,0 +1,28 @@
+<?php if ($this->previewMode): ?>
+
+<div class="form-control">
+ <?= $value ?>
+</div>
+
+<?php else: ?>
+
+
+<select id="<?= $this->getId('input') ?>" name="<?= $name ?>" class="form-control">
+
+ <?php foreach($image_prices as $item) {
+?>
+ <option value="<?= $item['photo_name'] ?>"
+ <?php if ($item['photo_name'] === $value){ echo 'selected'; } ?>
+ price="<?= $item['photo_price'] ?>"
+ symbol_weight="<?= $item['weight_in_symbol'] ?>
+ ">
+    <?= $item['title'] ?>
+    </option>
+ <?php
+    }
+  ?>
+
+</select>
+
+
+<?php endif ?>

@@ -1,0 +1,52 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Название газеты
+tabs:
+    fields:
+        releases:
+            tab: Выпуски
+            label: Выпуски
+            type: partial
+            path: release_field
+            context:
+                - update
+        article:
+            tab: Статья
+            type: partial
+            path: article_field
+            span: storm
+            cssClass: col-xs-6
+            context:
+                - update
+        articleImageSize:
+            tab: Статья
+            type: partial
+            path: articleImageSize_field
+            span: storm
+            cssClass: col-xs-6
+            context:
+                - update
+        orderArticleSettings:
+            tab: Статья
+            type: partial
+            path: orderArticleSettings_field
+            span: storm
+            cssClass: col-xs-6
+            context:
+                - update
+#        congratulation:
+#            tab: Поздравления
+#            type: partial
+#            path: congratulation_field
+#            context:
+#                - update
+        banner:
+            tab: Баннеры
+            type: partial
+            path: banner_field
+            context:
+                - update

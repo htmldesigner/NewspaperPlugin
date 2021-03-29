@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Order
+
+# Model Form Field configuration
+form: $/softlance/newspaper/models/order/fields.yaml
+
+# Model Class name
+modelClass: Softlance\Newspaper\Models\Order
+
+# Default redirect location
+defaultRedirect: softlance/newspaper/orders
+
+# Create page
+create:
+    title: Create Order
+    redirect: softlance/newspaper/orders/update/:id
+    redirectClose: softlance/newspaper/orders
+
+# Update page
+update:
+    title: Edit Order
+    redirect: softlance/newspaper/orders
+    redirectClose: softlance/newspaper/orders
+
+# Preview page
+preview:
+    title: Preview Order

@@ -1,0 +1,17 @@
+<div class="form-group dropdown-field">
+ <label>Drop Down</label>
+ <?php
+  dump($value);
+ ?>
+ <select name="article_price_list" class="form-control custom-select">
+
+  <?php
+    foreach($article_prices as $item) {
+      ?>
+      <option value="" price="<?= $item['price'] ?>"><?= $item['title'] ?></option>
+      <?php
+    }
+  ?>
+
+ </select>
+</div>

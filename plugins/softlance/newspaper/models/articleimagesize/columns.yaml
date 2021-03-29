@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    size:
+        label: Размер
+    price:
+        label: Цена
+    weight_in_symbol:
+        label: Вес в символах

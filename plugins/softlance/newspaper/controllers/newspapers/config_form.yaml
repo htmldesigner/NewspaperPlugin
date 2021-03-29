@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Newspaper
+
+# Model Form Field configuration
+form: $/softlance/newspaper/models/newspaper/fields.yaml
+
+# Model Class name
+modelClass: Softlance\Newspaper\Models\Newspaper
+
+# Default redirect location
+defaultRedirect: softlance/newspaper/newspapers
+
+# Create page
+create:
+    title: Create Newspaper
+    redirect: softlance/newspaper/newspapers/update/:id
+    redirectClose: softlance/newspaper/newspapers
+
+# Update page
+update:
+    title: Edit Newspaper
+    redirect: softlance/newspaper/newspapers
+    redirectClose: softlance/newspaper/newspapers
+
+# Preview page
+preview:
+    title: Preview Newspaper

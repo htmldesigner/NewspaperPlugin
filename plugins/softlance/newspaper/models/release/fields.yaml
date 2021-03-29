@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        span: storm
+        cssClass: col-xs-6
+        label: Название выпуска
+    release_date:
+        span: storm
+        cssClass: col-xs-6
+        label: Дата выхода
+        type: datepicker
+        mode: date

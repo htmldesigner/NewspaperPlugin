@@ -1,0 +1,15 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  id:
+    label: ID
+  pivot[newspaper_id]:
+    label: newspaper_id
+  pivot[service_id]:
+    label:  service_id
+  pivot[price]:
+    label: price
+  pivot[settings]:
+    label: settings

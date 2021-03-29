@@ -1,0 +1,9 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    symbol_count:
+        label: Количество символов
+    price:
+        label: Цена

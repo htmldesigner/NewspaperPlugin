@@ -1,0 +1,13 @@
+columns:
+  id:
+    label: ID
+  name:
+    label: Выпуски
+  release_date:
+    label: Дата выхода
+#  pivot[service_id]:
+#    label:  service_id
+#  pivot[price]:
+#    label: price
+#  pivot[settings]:
+#    label: settings

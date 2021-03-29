@@ -1,0 +1,65 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    symbol_price:
+        span: storm
+        cssClass: col-xs-6
+        label: Цена за символ (тенге)
+    symbol_limit:
+        span: storm
+        cssClass: col-xs-6
+        label: Максимальное кол-во символов в статье
+#    photo_price:
+#        span: storm
+#        cssClass: col-xs-6
+#        label: Цена выездной фотоссесии
+#    studio_photo_price:
+#        span: storm
+#        cssClass: col-xs-6
+#        label: Цена фото в фотостудии
+#    article_price_list:
+#        span: storm
+#        cssClass: col-xs-12
+#        type: repeater
+#        label: Стоимости статей
+#        form:
+#            fields:
+#                article_name:
+#                    label: Название
+#                    type: text
+#                    span: storm
+#                    cssClass: col-xs-6
+#                article_price:
+#                    label: Стоимость статьи
+#                    type: number
+#                    span: storm
+#                    cssClass: col-xs-3
+#                symbol_count:
+#                    label: Символов в статье
+#                    type: number
+#                    span: storm
+#                    cssClass: col-xs-3
+#    photo_size:
+#        span: storm
+#        cssClass: col-xs-12
+#        type: repeater
+#        label: Фиксированные размеры банеров и вес в символах
+#        form:
+#            fields:
+#                photo_name:
+#                    label: Название
+#                    type: text
+#                    span: storm
+#                    cssClass: col-xs-6
+#                photo_price:
+#                    label: Цена
+#                    type: text
+#                    span: storm
+#                    cssClass: col-xs-3
+#                weight_in_symbol:
+#                    label: Вес в символах
+#                    type: number
+#                    span: storm
+#                    cssClass: col-xs-3
